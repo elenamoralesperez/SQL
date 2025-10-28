@@ -84,3 +84,22 @@ volumes:
 - SELECT --> permite que la base de datos sepa que desea recuperar datos
 - WHERE --> solo debe afectar a las filas que cumplen los criterios especificados
 *SELECT * FROM users WHERE age=19;*
+- UPDATE SET --> actualizar una fila de algun usuario
+- DELETE FROM --> eliminar toda la fila
+- ORDER BY --> ordenar de manera ascendente o descendente 
+- BETWEEN --> hacer rangos entre valores
+- DISTINCT --> va en contra de toda la fila de TODAS las columnas, por ej.: buscame las edades que sean diferentes
+- CONCATENATE --> puedes concatenar los valores mientras selecciona filas de la tabla
+- El simbolo | es para unir
+- LIKE & NOT LIKE --> que contenga/no contenga (%a%), que empiece por (a%), que termine por (%a)
+Se usa con WHERE para buscar un patrón específico en una columna
+- GROUP BY ---> agrupar filas
+
+
+### FUNCIONES CON SELECT
+SELECT COUNT(id) FROM
+SELECT MAX(age) FROM
+SELECT MIN(age) FROM
+SELECT SUM(age) FROM
+SELECT AVG(age) FROM 
+

@@ -36,8 +36,32 @@ SELECT * FROM employees WHERE id = 2;
 SELECT * FROM employees WHERE salary > 20000;
 SELECT * FROM employees WHERE salary <= 10000;
 
+UPDATE employees SET first_name = 'Marta' WHERE id = 7;
+DELETE FROM employees WHERE id = 5;
+DELETE FROM employees WHERE salary > 20000;
+SELECT * FROM employees WHERE salary BETWEEN 14000 AND 50000;
+SELECT * FROM employees ORDER BY birth_date DESC;
 
+SELECT DISTINCT first_name FROM employees;
+SELECT first_name || ' ' || last_name AS name FROM employees WHERE id = 10;
+SELECT * FROM employees WHERE first_name LIKE 'P%';
+SELECT * FROM employees WHERE first_name LIKE '%a%';
 
+SELECT COUNT(id) FROM employees;
+SELECT MAX(salary) FROM employees;
+SELECT title, AVG(salary) FROM employees GROUP BY title;
+SELECT title, MAX(salary),MIN(salary) FROM employees GROUP BY title;
 
+SELECT first_name, salary,
+    salary * 0.12 AS ahorro_mensual,
+    ROUND((salary * 0.12) * 3, 2) AS total_ahorrado_aproximado
+FROM employees;
+
+-- EXTRA
+SELECT first_name, salary,
+    salary * 0.21 AS impuestos,
+    ROUND((salary * 0.21), 2) AS total_impuestos,
+    ROUND(salary - (salary * 0.21), 2) AS salario_neto
+FROM employees;
 
 
