@@ -37,4 +37,6 @@ Muchos a muchos. Muchos datos de una tabla se relacionan con muchos datos de otr
 
 
 
+## Creamos nuestro primer diagrama con dbdiagram
+
 
