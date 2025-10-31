@@ -40,3 +40,9 @@ Muchos a muchos. Muchos datos de una tabla se relacionan con muchos datos de otr
 ## Creamos nuestro primer diagrama con dbdiagram
 
 
+## INNERJOIN
+
+- INNER JOIN selecciona todas las filas de ambas tablas participantes siempre que haya una coincidencia entre las columnas.
+- INNER JOIN une dos tablas de acuerdo con la coincidencia de ciertos criterios utilizando un operador de comparación.
+
+
