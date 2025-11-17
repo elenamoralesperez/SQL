@@ -144,3 +144,5 @@ SELECT
     ROUND(grade * 0.05, 2) AS bonus,
     ROUND(grade + (grade * 0.05), 2) AS total_grade
 FROM students_db;
+
+
